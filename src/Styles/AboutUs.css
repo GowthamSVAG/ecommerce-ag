@@ -1,3 +1,10 @@
+.aboutus {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+  margin-left: 30px;
+}
 .aboutus h3 {
   text-underline-offset: 5px;
   font-size: 30px;
@@ -5,13 +12,6 @@
   color: #00000096;
   text-decoration: underline;
   text-decoration-color: #ffcc00cf;
-}
-.aboutus {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  margin-right: 70px;
-  margin-left: 30px;
 }
 .heading {
   font-size: 40px;
