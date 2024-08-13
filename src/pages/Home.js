@@ -1,19 +1,29 @@
 import "../Styles/Home.css";
-import home1 from '../Assets/home-c1.jpg'
-import home2 from '../Assets/home-c2.jpg'
+import home1 from "../Assets/home-c1.jpg";
+import home2 from "../Assets/home-c2.jpg";
+import home3 from "../Assets/home-c3.jpg";
+import home4 from "../Assets/home-c4.jpg";
 export default function Home() {
   return (
     <>
-        <div className="home">
-           <div className="slides">
-            <div className="slide-1">
-                <img src={home1} alt="" />
+      <div className="home">
+        <div class="slider">
+          <figure>
+            <div class="slide">
+              <img src={home1} alt="" />
             </div>
-            <div className="slide-2">
-                <img src={home2} alt="" />
+            <div class="slide">
+              <img src={home2} alt="" />
             </div>
-           </div>
+            <div class="slide">
+              <img src={home3} alt="" />
+            </div>
+            <div class="slide">
+              <img src={home4} alt="" />
+            </div>
+          </figure>
         </div>
+      </div>
     </>
   );
 }
