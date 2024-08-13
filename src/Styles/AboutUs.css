@@ -1,0 +1,102 @@
+.aboutus h3 {
+  text-underline-offset: 5px;
+  font-size: 30px;
+  font-style: bold;
+  color: #00000096;
+  text-decoration: underline;
+  text-decoration-color: #ffcc00cf;
+}
+.aboutus {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+  margin-left: 30px;
+}
+.heading {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  color: #000000;
+}
+.welcome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.welcome p {
+  text-indent: 80px;
+  line-height: 35px;
+  padding-right: 150px;
+  padding-left: 10px;
+  text-align: justify;
+}
+.welcome-img img {
+  width: 450px;
+  height: 400px;
+}
+.our-mission {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.our-mission p {
+  text-indent: 80px;
+  line-height: 35px;
+  padding-right: 200px;
+  padding-left: 10px;
+  text-align: justify;
+}
+.mission-img img {
+  width: 450px;
+  height: 400px;
+}
+.our-vission {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.our-vission p {
+  text-indent: 80px;
+  line-height: 35px;
+  padding-right: 150px;
+  padding-left: 10px;
+  text-align: justify;
+}
+.vission-img img {
+  width: 450px;
+  height: 400px;
+}
+.shop-with-us {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.shop-with-us h3 {
+  padding-left: 50px;
+}
+.shop-with-us p {
+  padding-right: 70px;
+  padding-left: 80px;
+  text-align: justify;
+  line-height: 35px;
+}
+.shopus-img img {
+  width: 450px;
+  height: 400px;
+}
+.community {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.community p {
+  text-indent: 80px;
+  line-height: 35px;
+}
+.community-img img {
+  width: 450px;
+  height: 400px;
+}

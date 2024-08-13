@@ -1,0 +1,112 @@
+header {
+  position: fixed;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly ;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  margin: -8px;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-left: 500px;
+}
+
+.nav-list a {
+  display: block;
+  margin: 0 px;
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+.nav-list a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #ffc900;
+  width: 0%;
+  height: 3.5px;
+  transition: width 0.5s ease;
+}
+
+.nav-list a:hover::before {
+  width: 100%;
+}
+
+.logo-name {
+  padding-left: 0px;
+  font-family: "Vampire Wars";
+  font-size: 50px;
+  text-decoration: none;
+  color: #000;
+}
+
+.hr-rule1 {
+  display: block;
+  height: 0.1px;
+  background-color: #ffc400;
+  border: 2px solid #ffc900;
+  width: 0%;
+  margin: auto;
+  margin-bottom: 1px;
+  transition: width 0.6s;
+  opacity: 0;
+}
+
+.logo-group:hover .hr-rule1 {
+  width: 100%;
+  transform-origin: right;
+  opacity: 1;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+
+  gap: 16px;
+}
+
+.search-input {
+  color: black;
+  border-width: 3px;
+  align-content: start;
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.search-icon {
+  padding-top: 3px;
+}
+
+.cart-icon {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+}
+.cart-icon:hover {
+  fill: #ffc400;
+}
+.login-signup {
+  justify-items: center;
+}
+
+.input:focus {
+  border-bottom: 1px solid #6941c6;
+  -webkit-transition: 0.1s;
+  transition: 0.5s;
+}
