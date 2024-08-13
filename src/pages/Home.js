@@ -1,3 +1,6 @@
+import p1 from "../Assets/p2.png";
+
+import "../Styles/Product.css";
 import "../Styles/Home.css";
 import home1 from "../Assets/home-c1.jpg";
 import home2 from "../Assets/home-c2.jpg";
@@ -22,6 +25,188 @@ export default function Home() {
               <img src={home4} alt="" />
             </div>
           </figure>
+        </div>
+      </div>
+      <h6 id="prd">Our Products</h6>
+
+
+      <div className="container">
+        <div className="box">
+          <div className="content">
+            <div className="img-box">
+              <img src={p1} />
+            </div>
+            <div className="detail">
+              <div className="info">
+                <h3>Shirt</h3>
+                <p>₹ 152</p>
+              </div>
+              <div className="brand-button">
+                <p>Nike</p>
+                <button class="button">
+                  View Product
+                  <div class="hoverEffect">
+                    <div></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="box">
+          <div className="content">
+            <div className="img-box">
+              <img src={p1} />
+            </div>
+            <div className="detail">
+              <div className="info">
+                <h3>Shirt</h3>
+                <p>₹ 152</p>
+              </div>
+              <div className="brand-button">
+                <p>Nike</p>
+                <button class="button">
+                  View Product
+                  <div class="hoverEffect">
+                    <div></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="box">
+          <div className="content">
+            <div className="img-box">
+              <img src={p1} />
+            </div>
+            <div className="detail">
+              <div className="info">
+                <h3>Shirt</h3>
+                <p>₹ 152</p>
+              </div>
+              <div className="brand-button">
+                <p>Nike</p>
+                <button class="button">
+                  View Product
+                  <div class="hoverEffect">
+                    <div></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="box">
+          <div className="content">
+            <div className="img-box">
+              <img src={p1} />
+            </div>
+            <div className="detail">
+              <div className="info">
+                <h3>Shirt</h3>
+                <p>₹ 152</p>
+              </div>
+              <div className="brand-button">
+                <p>Nike</p>
+                <button class="button">
+                  View Product
+                  <div class="hoverEffect">
+                    <div></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="box">
+          <div className="content">
+            <div className="img-box">
+              <img src={p1} />
+            </div>
+            <div className="detail">
+              <div className="info">
+                <h3>Shirt</h3>
+                <p>₹ 152</p>
+              </div>
+              <div className="brand-button">
+                <p>Nike</p>
+                <button class="button">
+                  View Product
+                  <div class="hoverEffect">
+                    <div></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="box">
+          <div className="content">
+            <div className="img-box">
+              <img src={p1} />
+            </div>
+            <div className="detail">
+              <div className="info">
+                <h3>Shirt</h3>
+                <p>₹ 152</p>
+              </div>
+              <div className="brand-button">
+                <p>Nike</p>
+                <button class="button">
+                  View Product
+                  <div class="hoverEffect">
+                    <div></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="box">
+          <div className="content">
+            <div className="img-box">
+              <img src={p1} />
+            </div>
+            <div className="detail">
+              <div className="info">
+                <h3>Shirt</h3>
+                <p>₹ 152</p>
+              </div>
+              <div className="brand-button">
+                <p>Nike</p>
+                <button class="button">
+                  View Product
+                  <div class="hoverEffect">
+                    <div></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="box">
+          <div className="content">
+            <div className="img-box">
+              <img src={p1} />
+            </div>
+            <div className="detail">
+              <div className="info">
+                <h3>Shirt</h3>
+                <p>₹ 152</p>
+              </div>
+              <div className="brand-button">
+                <p>Nike</p>
+                <button class="button">
+                  View Product
+                  <div class="hoverEffect">
+                    <div></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

@@ -59,3 +59,16 @@ figure {
     left: 0%;
   }
 }
+h6 {
+    padding-top: 15px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    color: #000000;
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: #ffc900;
+    text-underline-offset: 10px;
+   
+  }

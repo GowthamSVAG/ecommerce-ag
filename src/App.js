@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-import ProductPage from "./pages/Product";
+
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/product" element={<ProductPage />} />
+
           <Route path="/about" element={<AboutUs />} />
           <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />

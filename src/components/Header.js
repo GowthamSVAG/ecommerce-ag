@@ -17,7 +17,7 @@ export default function Header() {
         <div className="nav-list">
           
           <Link to="/home">Home</Link>
-          <Link to="/product">Products</Link>
+
 
           <Link to="/about">AboutUs</Link>
 
