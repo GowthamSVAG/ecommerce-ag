@@ -59,13 +59,15 @@
 
 }
 
+
 /* Style for Product Card Button-->Start */
 
 .button {
   display:flex;
   align-items: center;
   /* margin-left: 70px; */
-
+  text-decoration: none;
+  font-size: smaller;
   justify-content: center;
   padding: 0px 30px;
   border: 0;

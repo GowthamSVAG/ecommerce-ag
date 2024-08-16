@@ -8,7 +8,7 @@ export default function Header() {
     <>
       <header>
         <div className="logo-group">
-          <Link to="/" className="logo-name">
+          <Link to="/home" className="logo-name">
             AG Cart
           </Link>
           <div className="hr-rule1"></div>
