@@ -8,7 +8,7 @@ export default function Header() {
     <>
       <header>
         <div className="logo-group">
-          <Link to="/home" className="logo-name">
+          <Link to="/" className="logo-name">
             AG Cart
           </Link>
           <div className="hr-rule1"></div>
@@ -16,7 +16,7 @@ export default function Header() {
 
         <div className="nav-list">
           
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
 
 
           <Link to="/about">AboutUs</Link>

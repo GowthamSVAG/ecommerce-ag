@@ -11,14 +11,14 @@ export default function ProductDetail() {
             />
           </div>
 
-          <div className="detail">
+          <div className="prd-details">
             <div className="brand">
               <h3>Nike</h3>
             </div>
             <div className="prd-name">
               <h3>Sports Shoe</h3>
             </div>
-            <div className="rating"></div>
+            <div className="rating">Rating</div>
             <div className="price">
               <h3>Price: </h3>
               <h4>$254</h4>
