@@ -38,12 +38,12 @@ export default function Header() {
           </span>
 
           <div className="cart-icon">
-            
+            <Link to='/cart'>
             <FontAwesomeIcon
               icon={faCartShopping}
               size="lg"
               style={{ color: "#838891" }}
-            />
+            /></Link>
           </div>
 
           <Link to="/login">Login</Link>

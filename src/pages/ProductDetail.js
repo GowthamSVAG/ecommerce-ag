@@ -18,8 +18,8 @@ export default function ProductDetail() {
             <div className="prd-name">
               <h3>Sports Shoe</h3>
             </div>
-            <div className="rating">
-              <div class="star-rating">
+            
+            <div class="star-rating">
                 <span className="star" >
                   &#9733;
                 </span>
@@ -35,8 +35,8 @@ export default function ProductDetail() {
                 <span className="star" >
                   &#9733;
                 </span>
-              </div>
             </div>
+            
             <div className="price">
               <h3>
                 Price:<h4>$254</h4>
