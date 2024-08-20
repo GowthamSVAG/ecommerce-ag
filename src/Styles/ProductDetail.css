@@ -9,7 +9,7 @@
   height: 700px;
   border-radius: 15px;
   background-color: rgb(237, 237, 237);
-  box-shadow: 0px 4px 9px 1px #088171cf;
+  box-shadow: 0px 3px 5px 1px #088171cf;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -24,11 +24,16 @@
 .prd-details {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:center;
+  justify-content: space-evenly;
   justify-content: center;
   font-size: 20px;
 }
+.brand h3{
+  margin: 0;
+}
 .brand {
+  margin: 0;
   display: flex;
   text-decoration: underline;
   text-decoration-color: #ffcc00cf;
@@ -36,55 +41,144 @@
   justify-content: center;
   font-style: italic;
 }
+
 .prd-name h3 {
+  margin: 0;
   font-style: oblique;
   display: flex;
   justify-content: center;
   color: rgb(11, 120, 108);
 }
 .rating {
+
+margin: 0;
   display: flex;
   justify-content: center;
 }
 .price {
+  margin-top: 9px;
+  padding: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   color: rgba(52, 53, 55, 0.819);
 }
-.price h4 {
+.price h3 {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  align-items: center;
+}
+.price h3 h4 {
+  margin: 0;
   color: black;
   text-indent: 6px;
 }
 
-.status {
+.stock {
+  margin-top: 9px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  color: rgba(52, 53, 55, 0.819);
+  align-items: center;
 }
-.status h4 {
+
+.stock h3 {
+  display: flex;
+  margin: 0;
+  margin-top: 0;
+  flex-direction: row;
+  color: rgba(52, 53, 55, 0.819);
+  text-indent: 6px;
+}
+.stock h3 h4 {
+  margin: 0;
   color: black;
   text-indent: 6px;
 }
+.prd-qty{
+  width: 230px;
+  margin: 0;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+}
+.prd-qnty h5{
+  color: rgba(52, 53, 55, 0.819);
+}
+.prd-qty h3{
+  justify-content: center;
 
+  margin: 0;
+
+}
+
+.prd-qty button{
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  color: aliceblue;  
+}
+
+.btn-blue{
+  border: 0;
+  background-color: blue;
+}
+.btn-red{
+  border: 0;
+  background-color: red;
+}
+.qty-count{
+  color: rgba(52, 53, 55, 0.819);
+}
+.prd-detail{
+  margin-top: 8px;
+}
 .prd-detail h3 {
+  margin: 0;
   display: flex;
-
   justify-content: center;
 }
+
 .prd-detail p {
+  margin-top: 2px;
   display: flex;
   text-align: center;
   width: 500px;
   font-size: 15px;
-  justify-content: center;
   color: rgba(123, 124, 126, 0.819);
 }
 
-.line {
-  align-items: end;
-  display: flex;
-  justify-content: center;
-  width: 80px;
-  height: 2px;
+.buy-now-btn{
+  color: rgb(0, 0, 0);
   background-color: #ffcc00cf;
+  width: 200px;
+  height: 50px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-style: italic;
+  font-family:'poppins';
+  /* border-top: #088171cf; */
+  border-top-right-radius:2px ;
+  border-bottom-left-radius: 2px;
+  box-shadow: 2px 2px 2px 1px;
+  border: 0;
+}
+
+.star-rating {
+    display: flex;
+    direction: row;
+}
+
+.star {
+    font-size: 2rem;
+    color: gold;
+    margin-right: 5px;
+}
+
+.star.selected {
+    color: lightgray;
 }

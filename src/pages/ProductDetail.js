@@ -18,22 +18,49 @@ export default function ProductDetail() {
             <div className="prd-name">
               <h3>Sports Shoe</h3>
             </div>
-            <div className="rating">Rating</div>
-            <div className="price">
-              <h3>Price: </h3>
-              <h4>$254</h4>
+            <div className="rating">
+              <div class="star-rating">
+                <span className="star" >
+                  &#9733;
+                </span>
+                <span className="star" >
+                  &#9733;
+                </span>
+                <span className="star" >
+                  &#9733;
+                </span>
+                <span className="star" >
+                  &#9733;
+                </span>
+                <span className="star" >
+                  &#9733;
+                </span>
+              </div>
             </div>
-            <div className="status">
-              <h3>In Stock: </h3>
-              <h4>35</h4>
+            <div className="price">
+              <h3>
+                Price:<h4>$254</h4>
+              </h3>
+            </div>
+            <div className="stock">
+              <h3>
+                In Stock: <h4>35</h4>
+              </h3>
+            </div>
+            <div className="prd-qty">
+              <h3 className="qty-count"> Quantity: </h3>
+              <button className="btn-blue">+</button>
+              <h3>3</h3>
+              <button className="btn-red">-</button>
             </div>
             <div className="prd-detail">
-              <h3>Product Descrption</h3>
+              <h3>Product Description</h3>
               <p>
                 OPPO F21s Pro 5G is a powerful device with a RAM extension
                 feature, that offers brilliant operational speed to users.
               </p>
             </div>
+            <button className="buy-now-btn"> 🛒 Buy Now⚡</button>
           </div>
         </div>
       </div>
