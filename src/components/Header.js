@@ -1,9 +1,17 @@
 import { Link } from "react-router-dom";
 import "../Styles/Header.css";
+import {useState} from 'react';
+import {useNavigate} from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons/faMagnifyingGlass";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons/faCartShopping";
 export default function Header() {
+  const[keyword,setKeyword]=useState('');
+  const navigate=useNavigate();
+
+  const searchButton=()=>{
+      navigate('/?keyword='+keyword);
+  }
   return (
     <>
       <header>
@@ -23,18 +31,21 @@ export default function Header() {
 
           <span className="search">
             <input
-              type="text"            
+              type="text"     
+              id="search_field"       
               className="search-input"
               name="text"  placeholder="Type..."
+              onChange={(e)=>setKeyword(e.target.value)}
+              onBlur={searchButton}
             />
           
-            <div className="search-icon">
+            <button onClick={searchButton} className="search-icon">
               <FontAwesomeIcon
                 icon={faMagnifyingGlass}
                 size="lg"
                 style={{ color: "#838891" }}
               />
-            </div>
+            </button>
           </span>
 
           <div className="cart-icon">

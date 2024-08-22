@@ -1,69 +1,63 @@
-.container {
-
+.box {
   display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 10px;
-  padding: 30px 0px;
-  font-style: italic;
-  
-}
-.container .box{
-  display: flex;
-  width: 350px;
-  height: 450px;
-  padding: 5px 0px 0px 0px;
+  width: 300px;
+  height: 400px;
+  padding: 0px 0px 0px 0px;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.69);
   margin-bottom: 40px;
   justify-content: center;
   border-radius: 10px;
-  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.073); 
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.073);
   border-style: solid;
   border-color: rgba(83, 80, 80, 0.253);
   border-width: 2px;
   border-bottom: #5499c5;
   border-right: #5499c5;
 }
-.container .box .content{
+.box .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
 }
-.container .box .content .img-box img{
+.box .content .img-box img {
   width: 250px;
   height: 250px;
 }
-.container .box .content .detail .info{
+.box .content .detail .info {
+
+  padding: 0px 0px 0px 0px;
   display: flex;
   justify-content:space-between;
   margin-top: 5px;
 }
-.container .box .content .detail .info h3{
-  font-size: 20px;
+.box .content .detail .info h3 {  display: flex;
+  flex-direction: row;
+  width: 150px;
+  align-items: center;
+  font-size: 12px;
   color: #5499c5;
 }
-.container .box .content .detail .info p{
+.box .content .detail .info p {
   color: #ffcc00cf;
-  font-size: 20px;
+  font-size: 15px;
 }
 
-.container .box .content .detail .brand-button{
+.box .content .detail .brand-button {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   /* margin-top: 5px; */
   align-items: center;
-
 }
-
-
+.brand-button p{
+  margin: 0;
+  font-size: 13px;
+}
 /* Style for Product Card Button-->Start */
 
 .button {
-  display:flex;
+  display: flex;
   align-items: center;
   /* margin-left: 70px; */
   text-decoration: none;

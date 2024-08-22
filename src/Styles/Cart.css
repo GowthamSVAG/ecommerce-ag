@@ -1,0 +1,95 @@
+.cart-total {
+  margin-top: 200px;
+}
+.cart {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+}
+.cart-column {
+  width: 70%;
+}
+.cart-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 35px;
+}
+.cart-heading p {
+  color: rgb(213, 200, 13);
+}
+
+.cart-list{
+    padding: 10px 50px 10px 50px;
+margin: 10px 30px  0px 30px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    box-shadow: 3px 2px 3px -1px rgba(19, 17, 9, 0.566);
+    border-radius: 5px;
+    height: 130px;
+    
+
+}
+.cart-img{
+    display: flex;
+}
+.cart-img img{
+   width: 100px; 
+}
+.cart-prd-name{
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 100px;
+}
+.cart-prd-name h3 a{
+color: black;
+font-size: 17px;
+text-decoration: none;
+}
+.cart-prd-qty{
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.cart-prd-qty input{
+    width: 15px;
+    border-color: aliceblue;
+    
+    border-style: none;
+   
+    font-size: 17px;
+    background-color:rgba(237, 237, 237, 0) ;
+    margin: 0;
+  
+  }
+.cart-prd-qty button{
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    color: aliceblue;  
+  }
+  
+  .btn-blue{
+    border: 0;
+    background-color: blue;
+  }
+  .btn-red{
+    border: 0;
+    background-color: red;
+  }
+  .delete-btn{
+    border-style: none;
+    background-color: rgba(240, 248, 255, 0);
+  }
+  .empt-res{
+    margin-top: 100px;
+  }
+  .succ-msg{
+    margin-top: 100px;
+  }
+ 

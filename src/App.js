@@ -8,21 +8,24 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ProductDetail from "./pages/ProductDetail";
 import Cart from "./pages/Cart";
-
+import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
+  const[cartItems,setCartItem]=useState([]);
   return (
     <div className="App">
+       <ToastContainer position="top-center" theme="dark"/>
       <Router>
-        <Header />
+        <Header cartItems ={cartItems}/>
         <Routes>
-
           <Route path="/about" element={<AboutUs />} />
           <Route path="/" element={<Home />} />
-          <Route path="/prod-detail" element={<ProductDetail/>}/>
+          <Route path="/prod-detail/:id" element={<ProductDetail cartItems={cartItems} setCartItem={setCartItem}/>}/>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/cart" element={<Cart/>}/>
+          <Route path="/cart" element={<Cart cartItems={cartItems} setCartItem={setCartItem}/>}/>
         </Routes>
       </Router>
       <Footer />

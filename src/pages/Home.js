@@ -1,214 +1,50 @@
-import { Link } from "react-router-dom";
+import ProductCard from "../pages/ProductCard";
 import "../Styles/Product.css";
 import "../Styles/Home.css";
-import p1 from "../Assets/p2.png";
+import { useSearchParams } from "react-router-dom";
 import home1 from "../Assets/home-c1.jpg";
 import home2 from "../Assets/home-c2.jpg";
 import home3 from "../Assets/home-c3.jpg";
 import home4 from "../Assets/home-c4.jpg";
+import { Fragment, useEffect, useState } from "react";
+
 export default function Home() {
+  const [searchValue, setSearchValue] = useSearchParams("");
+  const [products, setProduct] = useState([]);
+
+  useEffect(() => {
+    fetch(process.env.REACT_APP_API_URL + "/product?" + searchValue)
+      .then((response) => response.json())
+      .then((res) => setProduct(res.products));
+  }, [searchValue]);
   return (
-    <>
-
-
-      <div className="home">
-        <div class="slider">
-          <figure>
-            <div class="slide">
-              <img src={home1} alt="" />
-            </div>
-            <div class="slide">
-              <img src={home2} alt="" />
-            </div>
-            <div class="slide">
-              <img src={home3} alt="" />
-            </div>
-            <div class="slide">
-              <img src={home4} alt="" />
-            </div>
-          </figure>
-        </div>
-      </div>
-      <h6 id="prd">Our Products</h6>
-      <div className="container">
-        <div className="box">
-          <div className="content">
-            <div className="img-box">
-              <img src={p1} />
-            </div>
-            <div className="detail">
-              <div className="info">
-                <h3>Shirt</h3>
-                <p>₹ 152</p>
+    <Fragment>
+      <>
+        <div className="home">
+          <div class="slider">
+            <figure>
+              <div class="slide">
+                <img src={home1} alt="" />
               </div>
-              <div className="brand-button">
-                <p>Nike</p>
-                <Link to='/prod-detail' class="button" >
-                  View Product
-                  <div class="hoverEffect">
-                    <div></div>
-                  </div>
-                  </Link>
+              <div class="slide">
+                <img src={home2} alt="" />
               </div>
-            </div>
+              <div class="slide">
+                <img src={home3} alt="" />
+              </div>
+              <div class="slide">
+                <img src={home4} alt="" />
+              </div>
+            </figure>
           </div>
         </div>
-
-        <div className="box">
-          <div className="content">
-            <div className="img-box">
-              <img src={p1} />
-            </div>
-            <div className="detail">
-              <div className="info">
-                <h3>Shirt</h3>
-                <p>₹ 152</p>
-              </div>
-              <div className="brand-button">
-                <p>Nike</p>
-                <Link to='/prod-detail' class="button" >
-                  View Product
-                  <div class="hoverEffect">
-                    <div></div>
-                  </div>
-                  </Link>
-              </div>
-            </div>
-          </div>
+        <h6 id="prd">Our Products</h6>
+        <div className="container">
+          {products.map((product) => (
+            <ProductCard eachProduct={product} />
+          ))}
         </div>
-        <div className="box">
-          <div className="content">
-            <div className="img-box">
-              <img src={p1} />
-            </div>
-            <div className="detail">
-              <div className="info">
-                <h3>Shirt</h3>
-                <p>₹ 152</p>
-              </div>
-              <div className="brand-button">
-                <p>Nike</p>
-                <Link to='/prod-detail' class="button" >
-                  View Product
-                  <div class="hoverEffect">
-                    <div></div>
-                  </div>
-                  </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="box">
-          <div className="content">
-            <div className="img-box">
-              <img src={p1} />
-            </div>
-            <div className="detail">
-              <div className="info">
-                <h3>Shirt</h3>
-                <p>₹ 152</p>
-              </div>
-              <div className="brand-button">
-                <p>Nike</p>
-                <Link to='/prod-detail' class="button" >
-                  View Product
-                  <div class="hoverEffect">
-                    <div></div>
-                  </div>
-                  </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="box">
-          <div className="content">
-            <div className="img-box">
-              <img src={p1} />
-            </div>
-            <div className="detail">
-              <div className="info">
-                <h3>Shirt</h3>
-                <p>₹ 152</p>
-              </div>
-              <div className="brand-button">
-                <p>Nike</p>
-                <Link to='/prod-detail' class="button" >
-                  View Product
-                  <div class="hoverEffect">
-                    <div></div>
-                  </div>
-                  </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="box">
-          <div className="content">
-            <div className="img-box">
-              <img src={p1} />
-            </div>
-            <div className="detail">
-              <div className="info">
-                <h3>Shirt</h3>
-                <p>₹ 152</p>
-              </div>
-              <div className="brand-button">
-                <p>Nike</p>
-                <Link to='/prod-detail' class="button" >
-                  View Product
-                  <div class="hoverEffect">
-                    <div></div>
-                  </div>
-                  </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="box">
-          <div className="content">
-            <div className="img-box">
-              <img src={p1} />
-            </div>
-            <div className="detail">
-              <div className="info">
-                <h3>Shirt</h3>
-                <p>₹ 152</p>
-              </div>
-              <div className="brand-button">
-                <p>Nike</p>
-                <Link to='/prod-detail' class="button" >
-                  View Product
-                  <div class="hoverEffect">
-                    <div></div>
-                  </div>
-                  </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="box">
-          <div className="content">
-            <div className="img-box">
-              <img src={p1} />
-            </div>
-            <div className="detail">
-              <div className="info">
-                <h3>Shirt</h3>
-                <p>₹ 152</p>
-              </div>
-              <div className="brand-button">
-                <p>Nike</p>
-                <Link to='/prod-detail' class="button" >
-                  View Product
-                  <div class="hoverEffect">
-                    <div></div>
-                  </div>
-                  </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+      </>
+    </Fragment>
   );
 }
