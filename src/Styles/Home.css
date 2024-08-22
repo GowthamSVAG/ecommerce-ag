@@ -1,5 +1,6 @@
 .home {
-  margin-top: 100px;
+  margin-top: 80px;
+
 }
 
 .slider {
@@ -59,6 +60,8 @@ figure {
     left: 0%;
   }
 }
+
+
 h6 {
   padding-top: 15px;
   font-size: 40px;

@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import "../Styles/Product.css";
 export default function ProductCard({ eachProduct }) {
   return (
-    // <div className="container">
-    // </div>
     <div className="box">
       <div className="content">
         <div className="img-box">
@@ -16,7 +14,7 @@ export default function ProductCard({ eachProduct }) {
           </div>
           <div className="brand-button">
             <p>{eachProduct.seller}</p>
-            <Link to={'/prod-detail/'+eachProduct._id} class="button">
+            <Link to={"/prod-detail/" + eachProduct._id} class="button">
               View Product
               <div class="hoverEffect">
                 <div></div>

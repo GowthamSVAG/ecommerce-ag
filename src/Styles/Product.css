@@ -32,15 +32,18 @@
   justify-content:space-between;
   margin-top: 5px;
 }
-.box .content .detail .info h3 {  display: flex;
+.box .content .detail .info h3 { 
+   display: flex;
   flex-direction: row;
-  width: 150px;
-  align-items: center;
-  font-size: 12px;
-  color: #5499c5;
+  width: 163px;
+  height: 45px;
+  overflow: hidden;
+  /* align-items: center; */
+  font-size: 14px;
+  color: #060606;
 }
 .box .content .detail .info p {
-  color: #ffcc00cf;
+  color: #ffcc00e5;
   font-size: 15px;
 }
 
@@ -51,6 +54,7 @@
   align-items: center;
 }
 .brand-button p{
+  color: rgb(138, 135, 135);
   margin: 0;
   font-size: 13px;
 }
@@ -72,7 +76,7 @@
   transition: all 0.02s;
   font-weight: bold;
   cursor: pointer;
-  color: rgb(37, 37, 37);
+  color: rgb(0, 0, 0);
   z-index: 0;
   box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
 }

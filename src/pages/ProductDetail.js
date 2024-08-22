@@ -75,7 +75,7 @@ export default function ProductDetail({ cartItems, setCartItem }) {
             <div className="prd-qty">
               <h3 className="qty-count"> Quantity: </h3>
               <button className="btn-red"onClick={decreaseQty}>-</button>
-               <input type="number" className="" value={qty} readOnly />
+               <input type="number" value={qty} readOnly />
               <button className="btn-blue" onClick={increaseQty}>+</button>
             </div>
             <div className="prd-detail">

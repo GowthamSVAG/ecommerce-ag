@@ -3,8 +3,6 @@ import { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons/faMagnifyingGlass";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons/faCartShopping";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 export default function Cart({ cartItems, setCartItem }) {
   const [complete, setComplete] = useState(false);
@@ -62,7 +60,7 @@ export default function Cart({ cartItems, setCartItem }) {
       <div className="cart">
         <div className="cart-column">
           <div className="cart-heading">
-            <h5>Your Cart Items:</h5>
+            <h5>Your Cart Items: </h5>
             <p>{cartItems.length}</p>
           </div>
           {cartItems.map((item) => (
@@ -73,7 +71,7 @@ export default function Cart({ cartItems, setCartItem }) {
                 </div>
                 <div className="cart-prd-name">
                   <h3>
-                    {" "}
+               
                     <Link to={"/" + item.product._id}>{item.product.name}</Link>
                   </h3>
                 </div>
@@ -84,7 +82,7 @@ export default function Cart({ cartItems, setCartItem }) {
                   <button className="btn-red" onClick={() => decreaseQty(item)}>
                     -
                   </button>
-                  <input type="number" className="" value={item.qty} readOnly />
+                  <input type="number" className="qty-count" value={item.qty} readOnly />
                   <button
                     className="btn-blue"
                     onClick={() => increaseQty(item)}
@@ -108,11 +106,20 @@ export default function Cart({ cartItems, setCartItem }) {
             </Fragment>
           ))}
         </div>
-        <div className="cart-total">Total</div>
+        <div className="cart-total">
+          <div className="summary">Order Summary </div>
+          <div className="sub-total">Sub Total: <p>{cartItems.reduce((acc,item)=>(acc+item.qty),0)}</p></div>
+          <div className="total">Estimated Total: <p>₹{cartItems.reduce((acc,item)=>(acc+item.product.price*item.qty),0)}</p></div>
+          <button className="ord-btn" onClick={orderHandler}>🫡 Place Order 🛒</button>
+        </div>
       </div>
     </Fragment>
   ) : !complete ? (
-    <h1 className="empt-res">Your Cart Item is Empty</h1>
+    <div className="empt-res">
+      <div className="empt-heading"> 🫤Your Cart is Empty🛒❗</div>
+      <div><button className="continue-shop"><Link to='/'>Back to Shopping 🔙🛒😊</Link></button></div>
+     
+      </div>
   ) : (
     <Fragment>
       <h1 className="succ-msg">Your order is placed successfully!!</h1>
