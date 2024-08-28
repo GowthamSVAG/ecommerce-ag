@@ -1,5 +1,5 @@
 .aboutus {
-  margin-top: 60px;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   margin-right: 70px;
@@ -31,6 +31,8 @@
   padding-right: 150px;
   padding-left: 10px;
   text-align: justify;
+  font-weight: 700;
+  font-style: italic;
 }
 .welcome-img img {
   width: 450px;
@@ -47,6 +49,8 @@
   padding-right: 200px;
   padding-left: 10px;
   text-align: justify;
+  font-weight: 700;
+  font-style: italic;
 }
 .mission-img img {
   width: 450px;
@@ -63,6 +67,8 @@
   padding-right: 150px;
   padding-left: 10px;
   text-align: justify;
+  font-weight: 700;
+  font-style: italic;
 }
 .vission-img img {
   width: 450px;
@@ -73,6 +79,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  
 }
 .shop-with-us h3 {
   padding-left: 50px;
@@ -82,6 +89,8 @@
   padding-left: 80px;
   text-align: justify;
   line-height: 35px;
+  font-weight: 700;
+  font-style: italic;
 }
 .shopus-img img {
   width: 450px;
@@ -95,6 +104,8 @@
 .community p {
   text-indent: 80px;
   line-height: 35px;
+  font-weight: 700;
+  font-style: italic;
 }
 .community-img img {
   width: 450px;
