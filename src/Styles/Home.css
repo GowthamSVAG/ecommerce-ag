@@ -1,6 +1,5 @@
 .home {
   margin-top: 80px;
-
 }
 
 .slider {
@@ -67,7 +66,6 @@ h6 {
   font-size: 40px;
   display: flex;
   justify-content: center;
-  font-style: italic;
   color: #000000;
   margin: 0;
   text-decoration: underline;

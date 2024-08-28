@@ -1,6 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap');
+
 header {
   position: fixed;
-
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -49,7 +51,7 @@ header {
 .logo-name {
   height: 100px;
   padding-left: 0px;
-  font-family: "Vampire Wars";
+  font-family: "Vampiro One";
   font-size: 50px;
   text-decoration: none;
   color: #000;

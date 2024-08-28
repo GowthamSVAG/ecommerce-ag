@@ -38,32 +38,31 @@
   width: 163px;
   height: 45px;
   overflow: hidden;
-  /* align-items: center; */
   font-size: 14px;
   color: #060606;
 }
 .box .content .detail .info p {
   color: #ffcc00e5;
   font-size: 15px;
+  font-weight: 600;
 }
 
 .box .content .detail .brand-button {
   display: flex;
   justify-content: space-between;
-  /* margin-top: 5px; */
   align-items: center;
 }
 .brand-button p{
   color: rgb(138, 135, 135);
   margin: 0;
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: 600;
 }
 /* Style for Product Card Button-->Start */
 
 .button {
   display: flex;
   align-items: center;
-  /* margin-left: 70px; */
   text-decoration: none;
   font-size: smaller;
   justify-content: center;
