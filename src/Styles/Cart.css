@@ -57,14 +57,16 @@
   justify-content: space-evenly;
 }
 .cart-prd-qty input {
-  width: 22px;
+  width: 35px;
   border-color: aliceblue;
   border-style: none;
   font-family: 'M PLUS Rounded 1c';
   font-weight: 500;
   font-size: 17px;
+  margin-right:5px;
+  margin-left:10px;
   background-color: rgba(237, 237, 237, 0);
-  margin: 0;
+
 }
 .cart-prd-qty button {
   border-radius: 5px;
@@ -155,7 +157,10 @@
   background-image:url('../Assets/Empty.jpg');
   flex-direction: column;
   display: flex;
-  height:681px;
+  padding-top: 20%;
+  padding-bottom:40cqmin ;
+  height:max-content;
+  /* width: max-content; */
   margin-left: -7px;
   margin-right: -7px;
   padding-right: 700px;
@@ -165,6 +170,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 .empt-heading{
 

@@ -4,6 +4,7 @@
   flex-direction: column;
   margin-right: 70px;
   margin-left: 30px;
+  height: 100%;
 }
 .aboutus h3 {
   text-underline-offset: 5px;
