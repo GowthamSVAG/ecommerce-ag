@@ -20,25 +20,26 @@ export default function Home() {
   return (
     <Fragment>
       <>
-        <div className="home">
-          <div class="slider">
-            <figure>
-              <div class="slide">
-                <img src={home1} alt="" />
-              </div>
-              <div class="slide">
-                <img src={home2} alt="" />
-              </div>
-              <div class="slide">
-                <img src={home3} alt="" />
-              </div>
-              <div class="slide">
-                <img src={home4} alt="" />
-              </div>
-            </figure>
-          </div>
+        <div class="slider">
+          <figure>
+            <div class="slide">
+              <img src={home1} alt="" />
+            </div>
+            <div class="slide">
+              <img src={home2} alt="" />
+            </div>
+            <div class="slide">
+              <img src={home3} alt="" />
+            </div>
+            <div class="slide">
+              <img src={home4} alt="" />
+            </div>
+          </figure>
         </div>
-        <h6 id="prd">Our Products</h6>
+
+        <h6 id="prd" name="our-prd">
+          Our Products
+        </h6>
         <div className="container">
           {products.map((product) => (
             <ProductCard eachProduct={product} />

@@ -90,7 +90,12 @@
 }
 
 .succ-msg {
+
   margin-top: 100px;
+  display: flex;
+  padding-top: 250px;
+  align-items: center;
+  justify-content: center;
 }
 .cart-total {
   margin-top: 200px;
