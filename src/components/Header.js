@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { Button } from "react-scroll";
+import carti from "../Assets/cart-icon.png";
 import "../Styles/Header.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons/faMagnifyingGlass";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons/faCartShopping";
 export default function Header() {
   const [keyword, setKeyword] = useState("");
   const navigate = useNavigate();
@@ -24,31 +24,34 @@ export default function Header() {
         </div>
 
         <div className="search-box">
-          <span className="search">
-            <input
-              type="text"
-              id="search_field"
-              name="text"
-              placeholder="  Search a product..."
-              onChange={(e) => setKeyword(e.target.value)}
-              onBlur={searchButton}
-            />
-
-            <Button
-              to="our-prd"
-              smooth={true}
-              offset={-0}
-              duration={500}
-              onClick={searchButton}
-              className="search-icon"
-            >
-              <FontAwesomeIcon
-                icon={faMagnifyingGlass}
-                size="lg"
-                style={{ color: "#838891" }}
+          <form>
+            <span className="search">
+              <input
+                type="text"
+                id="search_field"
+                name="text"
+                placeholder="  Search a product..."
+                onChange={(e) => setKeyword(e.target.value)}
+                onClick={searchButton}
+                onBlur={searchButton}
               />
-            </Button>
-          </span>
+
+              <Button
+                to="our-prd"
+                smooth={true}
+                offset={-0}
+                duration={500}
+                onClick={searchButton}
+                className="search-icon"
+              >
+                <FontAwesomeIcon
+                  icon={faMagnifyingGlass}
+                  size="lg"
+                  style={{ color: "#838891" }}
+                />
+              </Button>
+            </span>
+          </form>
         </div>
 
         <div className="nav-list">
@@ -60,11 +63,7 @@ export default function Header() {
 
         <div className="cart-icon">
           <Link to="/cart">
-            <FontAwesomeIcon
-              icon={faCartShopping}
-              size="lg"
-              style={{ color: "#838891" }}
-            />
+            <img src={carti} alt="" />
           </Link>
         </div>
       </header>

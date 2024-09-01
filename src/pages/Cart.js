@@ -55,7 +55,7 @@ export default function Cart({ cartItems, setCartItem }) {
     });
   }
 
-  return cartItems.length > 0 ? (
+  return  cartItems.length > 0 ? (
     <Fragment>
       <div className="cart">
         <div className="cart-column">
@@ -117,7 +117,7 @@ export default function Cart({ cartItems, setCartItem }) {
   ) : !complete ? (
     <div className="empt-res">
       <div className="empt-heading"> 🫤Your Cart is Empty🛒❗</div>
-      <div><button className="continue-shop"><Link to='/'>Back to Shopping 🔙🛒😊</Link></button></div>
+      <div className="back-to"><button className="continue-shop"><Link to='/'>Back to Shopping 🔙🛒😊</Link></button></div>
      
       </div>
   ) : (

@@ -45,8 +45,10 @@
   font-size: 17px;
   text-decoration: none;
 }
-.cart-prd-price{
-  font-family: 'M PLUS Rounded 1c';
+.cart-prd-price {
+  font-family: "M PLUS Rounded 1c";
+  margin: 0;
+  padding: 0;
   text-indent: 5px;
   font-weight: 500;
 }
@@ -54,19 +56,19 @@
   width: 150px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-evenly;
 }
 .cart-prd-qty input {
   width: 35px;
   border-color: aliceblue;
   border-style: none;
-  font-family: 'M PLUS Rounded 1c';
+  font-family: "M PLUS Rounded 1c";
   font-weight: 500;
   font-size: 17px;
-  margin-right:5px;
-  margin-left:10px;
+  margin-right: 5px;
+  margin-left: 10px;
   background-color: rgba(237, 237, 237, 0);
-
 }
 .cart-prd-qty button {
   border-radius: 5px;
@@ -90,7 +92,6 @@
 }
 
 .succ-msg {
-
   margin-top: 100px;
   display: flex;
   padding-top: 250px;
@@ -159,29 +160,28 @@
   height: 60px;
 }
 .empt-res {
-  background-image:url('../Assets/Empty.jpg');
+  background-image: url("https://img.freepik.com/free-photo/view-landscape-monochrome-palette_23-2150635188.jpg?t=st=1725005590~exp=1725009190~hmac=3c7fc2abc6480c11d69a86ce9a3bf13348d7b818ebbcff2688fd712dc1119b97&w=1060");
   flex-direction: column;
   display: flex;
-  padding-top: 20%;
-  padding-bottom:40cqmin ;
-  height:max-content;
-  /* width: max-content; */
   margin-left: -7px;
-  margin-right: -7px;
-  padding-right: 700px;
-  align-items: center;
+  margin-right:-7px;
+  width: auto;
+  height:93vh;
   justify-content: center;
-  margin-top: 51px;
+  align-items: center;
+  /* margin-top: 20px; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
-.empt-heading{
-
-font-size: 40px;
+.empt-heading {
+  /* padding-top: 19%; */
+  font-size: 40px;
 }
-.continue-shop{
+.back-to {
+  /* padding-bottom:18%; */
+}
+.continue-shop {
   margin-top: 10px;
   height: 50px;
   width: 300px;
@@ -189,9 +189,9 @@ font-size: 40px;
   border-color: rgba(240, 248, 255, 0);
   border-radius: 25px;
 }
-.continue-shop a{
+.continue-shop a {
   font-size: 20px;
-  font-family: 'M PLUS Rounded 1c';
+  font-family: "M PLUS Rounded 1c";
   font-weight: 500;
   color: rgb(1, 1, 1);
   text-decoration: none;

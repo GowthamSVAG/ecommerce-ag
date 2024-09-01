@@ -1,8 +1,4 @@
-import wel from "../Assets/welcome-img.jpg";
-import mission from "../Assets/mission.jpg";
-import vission from "../Assets/vission.jpg";
-import shopus from "../Assets/shopwithus.jpg";
-import comm from "../Assets/join-community.jpg";
+
 import "../Styles/AboutUs.css";
 
 export default function AboutUs() {
@@ -22,13 +18,13 @@ export default function AboutUs() {
             </p>
           </div>
           <div className="welcome-img">
-            <img src={wel} />
+            <img src="https://img.freepik.com/free-vector/welcome-concept-illustration_114360-370.jpg?t=st=1725003178~exp=1725006778~hmac=670f066203bf8bc2bbf8f20681128ad5370a67439b0639dc3b4a6286fe0875ea&w=740" />
           </div>
         </div>
 
         <div className="our-mission">
           <div className="mission-img">
-            <img src={mission} />
+            <img src="https://img.freepik.com/free-vector/career-growth-cooperation-development-project-idea-leader-with-loudspeaker-flying-helicopter_107791-66.jpg?t=st=1725003328~exp=1725006928~hmac=27749833df5134000c0ada71a02958937e29ef5a34ed458813f5c4003b01e04c&w=826" />
           </div>
           <div>
             <h3>Our Mission</h3>
@@ -51,13 +47,13 @@ export default function AboutUs() {
             </p>
           </div>
           <div className="vission-img">
-            <img src={vission} />
+            <img src="https://img.freepik.com/free-vector/business-concept-vector-illustration-businessman-who-running-with-increase-graphic-chart-see-imagination-future_1150-39743.jpg?t=st=1725003703~exp=1725007303~hmac=522a89713f2f8a9d3f4f487a3c8e96fe980c57453b00cbe3f821945d8e92355b&w=1060" />
           </div>
         </div>
 
         <div className="shop-with-us">
           <div className="shopus-img">
-            <img src={shopus} />
+            <img src="https://img.freepik.com/free-vector/shop-with-open-sign_23-2148562251.jpg?t=st=1725003861~exp=1725007461~hmac=9940f01f24aaf232e953583bb9ed07fa6fd95a16e2ffebebb70cf6817e576a26&w=740" />
           </div>
           <div>
             <h3>Why Shop With Us?</h3>
@@ -95,7 +91,7 @@ export default function AboutUs() {
             </p>
           </div>
           <div className="community-img">
-            <img src={comm} />
+            <img src="https://img.freepik.com/free-vector/group-concept-illustration_114360-8711.jpg?w=740&t=st=1725004056~exp=1725004656~hmac=22212ca22cde00609ca9597eb834143a9434cf1ce49060205fb454a9b5e19bae" />
           </div>
         </div>
       </div>

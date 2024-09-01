@@ -1,14 +1,13 @@
 /* #ffcc00cf */
 .product-detail {
-  margin-top: 85px;
+  margin-top: 70px;
   display: flex;
   justify-content: center;
-  height: 100px;
+  box-sizing: border-box;
 }
 .card {
   margin-top: 2%;
-  width: 75%;
-  height:max-content;
+  min-height: 500px;
   border-radius: 15px;
   background-color: rgba(247, 245, 245, 0.357);
   box-shadow: 0px 3px 5px 1px #088171cf;
@@ -16,18 +15,22 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  gap:25px;
 }
 .img img {
   display: flex;
-  width: 550px;
-  height: 550px;
+  object-fit: scale-down;
+  width: 450px;
+  height: 400px;
   box-shadow: 2px 3px 5px -1px rgb(160, 159, 159);
 }
+
 .prd-details {
-  width: 100%;
+  min-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +58,6 @@
   display: flex;
   text-align: center;
   justify-content: center;
-
   color: rgb(11, 120, 108);
 }
 .star-rating {
@@ -127,8 +129,9 @@
   color: rgba(52, 53, 55, 0.819);
 }
 .prd-qty input {
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
-  height: 60px;
   width: 40px;
   font-family: "M PLUS Rounded 1c";
   font-weight: 500;
@@ -160,6 +163,7 @@
   background-color: red;
 }
 .qty-count {
+  margin: 10px 0px 10px 0px;
   color: rgba(52, 53, 55, 0.819);
 }
 .prd-detail {
@@ -176,7 +180,7 @@
   font-style: italic;
   display: flex;
   text-align: center;
-  width: 500px;
+  max-width: 400px;
   font-size: 15px;
   font-weight: 450;
   color: rgb(95, 96, 98);

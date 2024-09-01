@@ -7,7 +7,6 @@ export default function ProductDetail({ cartItems, setCartItem }) {
   const { id } = useParams();
   const [qty, setQty] = useState(1);
 
-  
   useEffect(() => {
     fetch(process.env.REACT_APP_API_URL + "/product/" + id)
       .then((response) => response.json())
@@ -54,13 +53,13 @@ export default function ProductDetail({ cartItems, setCartItem }) {
               <h3>{product.name}</h3>
             </div>
 
-            <div class="star-rating">
+            {/* <div class="star-rating">
               <span className="star">&#9733;</span>
               <span className="star">&#9733;</span>
               <span className="star">&#9733;</span>
               <span className="star">&#9733;</span>
               <span className="star">&#9733;</span>
-            </div>
+            </div> */}
 
             <div className="price">
               <h3>
@@ -74,17 +73,25 @@ export default function ProductDetail({ cartItems, setCartItem }) {
             </div>
             <div className="prd-qty">
               <h3 className="qty-count"> Quantity: </h3>
-              <button className="btn-red"onClick={decreaseQty}>-</button>
-               <input type="number" value={qty} readOnly />
-              <button className="btn-blue" onClick={increaseQty}>+</button>
+              <button className="btn-red" onClick={decreaseQty}>
+                -
+              </button>
+              <input type="number" value={qty} readOnly />
+              <button className="btn-blue" onClick={increaseQty}>
+                +
+              </button>
             </div>
             <div className="prd-detail">
               <h3>Product Description</h3>
-              <p>
-              {product.description}
-              </p>
+              <p>{product.description}</p>
             </div>
-            <button className="buy-now-btn" onClick={cartHandler} disabled={product.stock==0}> 🛒 Buy Now⚡</button>
+            <button
+              className="buy-now-btn"
+              onClick={cartHandler}
+              disabled={product.stock == 0}
+            >
+              🛒 Buy Now⚡
+            </button>
           </div>
         </div>
       </div>
