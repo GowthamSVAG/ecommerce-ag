@@ -160,26 +160,31 @@
   height: 60px;
 }
 .empt-res {
-  background-image: url("https://img.freepik.com/free-photo/view-landscape-monochrome-palette_23-2150635188.jpg?t=st=1725005590~exp=1725009190~hmac=3c7fc2abc6480c11d69a86ce9a3bf13348d7b818ebbcff2688fd712dc1119b97&w=1060");
-  flex-direction: column;
+  margin-top: 80px;
+  /* background-image: url("../Assets/cart-back.png"); */
   display: flex;
-  margin-left: -7px;
-  margin-right:-7px;
-  width: auto;
-  height:93vh;
+
+  /* flex-direction: column; */
   justify-content: center;
-  align-items: center;
-  /* margin-top: 20px; */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  align-items: center;  
+}
+.empt-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 250px;
+  width: 600px;
+  border: 1.5px solid black;
+  border-radius: 8px;
 }
 .empt-heading {
-  /* padding-top: 19%; */
+  display: flex;
+  justify-content: center;
   font-size: 40px;
 }
-.back-to {
-  /* padding-bottom:18%; */
+.back-to{
+  display: flex;
+  justify-content: center;
 }
 .continue-shop {
   margin-top: 10px;

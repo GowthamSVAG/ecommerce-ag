@@ -1,0 +1,47 @@
+.order-page {
+    
+    flex-direction: column;
+
+  margin-top: 70px;
+}
+.order-page h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ord-list {
+  height: 110px;
+  width: 50%;
+  padding: 10px 50px 10px 50px;
+  margin: 10px 30px 0px 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 2px 5px -1px rgba(19, 17, 9, 0.566);
+  border-radius: 5px;
+}
+.ord-img {
+  display: flex;
+}
+.ord-img img {
+  width: 100px;
+}
+.ord-prd-name {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 100px;
+}
+.ord-prd-name h3 a {
+  color: black;
+  font-size: 17px;
+  text-decoration: none;
+}
+.ord-prd-price {
+  font-family: "M PLUS Rounded 1c";
+  margin: 0;
+  padding: 0;
+  text-indent: 5px;
+  font-weight: 500;
+}

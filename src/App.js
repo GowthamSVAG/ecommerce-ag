@@ -11,6 +11,7 @@ import Cart from "./pages/Cart";
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import OrderPage from "./pages/OrderPage";
 
 function App() {
   const[cartItems,setCartItem]=useState([]);
@@ -26,6 +27,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/cart" element={<Cart cartItems={cartItems} setCartItem={setCartItem}/>}/>
+          <Route path="/order" element={<OrderPage/>}/>
         </Routes>
       </Router>
       <Footer />

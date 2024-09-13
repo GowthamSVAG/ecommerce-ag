@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "react-scroll";
 import carti from "../Assets/cart-icon.png";
+import order from "../Assets/order.png";
 import "../Styles/Header.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -64,6 +65,9 @@ export default function Header() {
         <div className="cart-icon">
           <Link to="/cart">
             <img src={carti} alt="" />
+          </Link>
+          <Link to="/order">
+            <img src={order} alt="" />
           </Link>
         </div>
       </header>

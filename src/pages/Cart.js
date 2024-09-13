@@ -55,7 +55,7 @@ export default function Cart({ cartItems, setCartItem }) {
     });
   }
 
-  return  cartItems.length > 0 ? (
+  return cartItems.length > 0 ? (
     <Fragment>
       <div className="cart">
         <div className="cart-column">
@@ -71,7 +71,6 @@ export default function Cart({ cartItems, setCartItem }) {
                 </div>
                 <div className="cart-prd-name">
                   <h3>
-               
                     <Link to={"/" + item.product._id}>{item.product.name}</Link>
                   </h3>
                 </div>
@@ -82,7 +81,12 @@ export default function Cart({ cartItems, setCartItem }) {
                   <button className="btn-red" onClick={() => decreaseQty(item)}>
                     -
                   </button>
-                  <input type="number" className="qty-count" value={item.qty} readOnly />
+                  <input
+                    type="number"
+                    className="qty-count"
+                    value={item.qty}
+                    readOnly
+                  />
                   <button
                     className="btn-blue"
                     onClick={() => increaseQty(item)}
@@ -108,18 +112,37 @@ export default function Cart({ cartItems, setCartItem }) {
         </div>
         <div className="cart-total">
           <div className="summary">Order Summary </div>
-          <div className="sub-total">Sub Total: <p>{cartItems.reduce((acc,item)=>(acc+item.qty),0)}</p></div>
-          <div className="total">Estimated Total: <p>₹{cartItems.reduce((acc,item)=>(acc+item.product.price*item.qty),0)}</p></div>
-          <button className="ord-btn" onClick={orderHandler}>🫡 Place Order 🛒</button>
+          <div className="sub-total">
+            Sub Total:{" "}
+            <p>{cartItems.reduce((acc, item) => acc + item.qty, 0)}</p>
+          </div>
+          <div className="total">
+            Estimated Total:{" "}
+            <p>
+              ₹
+              {cartItems.reduce(
+                (acc, item) => acc + item.product.price * item.qty,
+                0
+              )}
+            </p>
+          </div>
+          <button className="ord-btn" onClick={orderHandler}>
+            🫡 Place Order 🛒
+          </button>
         </div>
       </div>
     </Fragment>
   ) : !complete ? (
     <div className="empt-res">
-      <div className="empt-heading"> 🫤Your Cart is Empty🛒❗</div>
-      <div className="back-to"><button className="continue-shop"><Link to='/'>Back to Shopping 🔙🛒😊</Link></button></div>
-     
+      <div className="empt-card">
+        <div className="empt-heading"> 🫤Your Cart is Empty🛒❗</div>
+        <div className="back-to">
+          <button className="continue-shop">
+            <Link to="/">Back to Shopping 🔙🛒😊</Link>
+          </button>
+        </div>
       </div>
+    </div>
   ) : (
     <Fragment>
       <h1 className="succ-msg">Your order is placed successfully!!</h1>

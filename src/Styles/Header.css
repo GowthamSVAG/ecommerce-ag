@@ -113,6 +113,7 @@ header {
   align-items: center;
   padding-right: 35px;
   padding-top: 5px;
+  gap: 20px;
 }
 .cart-icon:hover {
   fill: #ffc400;
