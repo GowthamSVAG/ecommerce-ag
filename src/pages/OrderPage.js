@@ -16,7 +16,7 @@ export default function OrderPage() {
       <h1>Order Page</h1>
       {order.map((ord) => (
         <div key={ord._id} className="order-container">
-          {/* <h6>Status: {ord.status}</h6> */}
+          {/* <h6>Status: {ord.status}</h6>   */}
           {/* <h5>Order Amount: ${ord.amount}</h5> */}
           <div className="order-items">
             {ord.orderItems.map((item) => (
@@ -34,6 +34,10 @@ export default function OrderPage() {
                 <div className="ord-prd-price">
                   <p>₹{item.product.price}</p>
                 </div>
+                <div className="ord-status">
+                <h6>Status: {ord.status}</h6>
+                </div>
+                <div className="tot-amt"><h6>{ord.amount}</h6></div>
               </div>
             ))}
           </div>

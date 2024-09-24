@@ -37,6 +37,7 @@ export default function Home() {
           </figure>
         </div>
 
+
         <h6 id="prd" name="our-prd">
           Our Products
         </h6>

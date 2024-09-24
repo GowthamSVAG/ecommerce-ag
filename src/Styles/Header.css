@@ -3,6 +3,7 @@
 header {
   position: fixed;
   overflow: hidden;
+  /* overflow-inline:hidden; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;

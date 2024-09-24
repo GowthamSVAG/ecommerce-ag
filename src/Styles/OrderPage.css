@@ -1,13 +1,14 @@
 .order-page {
-    
-    flex-direction: column;
+  flex-direction: column;
 
   margin-top: 70px;
 }
-.order-page h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.order-page h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline;
+  text-decoration-color: #ffc900;
 }
 
 .ord-list {
@@ -29,12 +30,12 @@
 }
 .ord-prd-name {
   display: flex;
+  max-width: 250px;
   align-items: center;
-  width: 250px;
-  height: 100px;
 }
-.ord-prd-name h3 a {
+.ord-prd-name h3 a{
   color: black;
+
   font-size: 17px;
   text-decoration: none;
 }
@@ -44,4 +45,17 @@
   padding: 0;
   text-indent: 5px;
   font-weight: 500;
+}
+
+.ord-status h6 {
+  font-weight: 500;
+  padding: 0;
+  font-size: medium;
+  text-decoration: none;
+}
+.tot-amt h6 {
+  padding: 0;
+  font-weight: 500;
+  font-size: medium;
+  text-decoration: none;
 }
